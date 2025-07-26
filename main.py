@@ -25,7 +25,7 @@ contrast_img = apply_contrast(img_arr, 1.1)
 bw_img = black_and_white(img_arr, 128)
 
 #Save the Outputs:
-Image.fromarray(gray_img).save('demo/gray.jpg')
+Image.fromarray(gray_img).save('gray.jpg')
 sepia_img.save('sepia.jpg')
 inverted_img.save('inverted.jpg')
 bright_img.save('bright.jpg')
