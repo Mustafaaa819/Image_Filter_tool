@@ -1,0 +1,19 @@
+
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+env/
+*.env
+
+# Images / outputs (optional)
+*.jpg
+*.png
+output/
+
