@@ -13,7 +13,6 @@ env/
 *.env
 
 # Images / outputs (optional)
-*.jpg
 *.png
 output/
 
