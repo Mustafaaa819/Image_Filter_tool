@@ -7,6 +7,7 @@ def blur_image(img_arr):
     width = img_arr.shape[1]
     channels = img_arr.shape[2]
 
+    #initialized an empty grid with all zero's in it.
     blurred = np.zeros_like(img_arr)
 
     for row in range(1,height-1):
