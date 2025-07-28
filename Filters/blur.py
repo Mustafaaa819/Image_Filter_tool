@@ -24,12 +24,7 @@ def blur_image(img_arr):
 
     return blurred
 
-img = Image.open('img.jpg')
-img_arr = np.array(img)
 
-blurred_arr = blur_image(img_arr)
-
-Image.fromarray(blurred_arr).save('blur.jpg')
 
 
 
