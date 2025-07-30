@@ -1,18 +1,12 @@
-# Gaussian Blur Filter
+# Sharpening the Image
 
-This script applies a Gaussian blur on an image using a manually built kernel.
+In the Sharpening script, I defined a sharpening kernel to slide over the image, build a matrix of the size defined and the output contains an sharpened Image.
 
-## Files
+## 🚀 How to Run
 
-- `main.py` – Contains the kernel logic and blur function.
-- `img.jpg` – Input image.
-- `gaussian_blur.jpg` – Output image.
+1. Place your image (e.g., `img.jpg`) in the project directory.
+2. Run the main file:
 
-## How to Use
-
-1. Install required libraries:
-
-2. Place `img.jpg` in the same directory.
-
-3. Run:
+```bash
+python main.py
 
