@@ -48,10 +48,3 @@ def apply_Gaussian_blur(image,kernel):
 
 
 
-
-
-
-
-
-
-
