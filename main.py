@@ -16,6 +16,7 @@ from Filters.sharpen import sharpen_image
 from Filters.sharpen import sharpening_kernel
 from Filters.edge_detection import edge_detection
 from Filters.edge_detection import sobel_x,sobel_y
+from Filters.emboss import emboss_filter, emboss_kernel
 
 #Load the Image:
 image = Image.open('img.jpg')
@@ -40,6 +41,8 @@ sharpen_the_image = sharpen_image(img_arr, sharpening_kernel)
 image = Image.open('img.jpg').convert('L')
 img_arr = np.array(image)
 detect_edges = edge_detection(img_arr, sobel_x, sobel_y)
+#Emboss:
+emboss_the_image = emboss_filter(img_arr, emboss_kernel)
 
 #Gaussian Blur:
 # kernel = build_gaussian_kernel(3,1)
@@ -57,4 +60,5 @@ detect_edges = edge_detection(img_arr, sobel_x, sobel_y)
 # Image.fromarray(blur_the_image).save('box_blur.jpg')
 # Image.fromarray(image_blur).save('gaussian_blur.jpg')
 # Image.fromarray(sharpen_the_image).save('sharpen.jpg')
-Image.fromarray(detect_edges).save('edges_detection.jpg')
+# Image.fromarray(detect_edges).save('edges_detection.jpg')
+Image.fromarray(emboss_the_image).save('emboss_filter.jpg')
